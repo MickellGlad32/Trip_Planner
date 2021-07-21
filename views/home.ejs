@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%-include('partials/head') %>
+</head>
+<body>
+    <%-include('partials/nav')%>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Trip</th>
+            <th scope="col">Departure Date</th>
+            <th scope="col">Return Date</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% Trips.forEach((Trip)=>{ %>
+                <tr>
+                    <th scope="row"></th>
+                    <td><%= Trip.title%></td>
+                    <td><%= Trip.departure_date %> </td>
+                    <td><%= Trip.return_date  %> </td>
+                </tr>
+                
+                <% }) %> 
+            </tbody>
+          </table>
+                
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%-include('partials/head') %>
+</head>
+
+<body>
+    <%-include('partials/nav')%>
+    
+    <h1 class="text-center my-5">Let's Book Your Trip!</h1>
+    <form method="POST">
+        <div class="mb-3">
+
+            <label for="trip_title" class="form-label">Title</label>
+            <input type="text" class="form-control" name="trip_title" id="trip_title">
+            
+            <br>
+            <label for="departure_date" class="form-label">Departure Date</label>
+            <input type="text" class="form-control" name="departure_date" id="departure_date">
+            <br>
+            <label for="return_date" class="form-label">Return Date</label>
+            <input type="text" class="form-control" name="return_date" id="return_date">
+            <br>
+            <button type="submit" class="btn btn-primary">Add New Trip</button>
+    </form>
+    </div>
+    <img src="apple-1-logo-png-transparent.png" alt="">
+    </div>
+
+
+</body>
+
+</html>
